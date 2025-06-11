@@ -4,7 +4,7 @@ SRCS:=$(wildcard smb1/*.c smbll/*.c src/*.c src/snes/*.c) third_party/gl_core/gl
 OBJS:=$(SRCS:%.c=%.o)
 
 PYTHON:=/usr/bin/env python3
-CFLAGS:=$(if $(CFLAGS),$(CFLAGS),-O2 -fno-strict-aliasing -Werror )
+CFLAGS:=$(if $(CFLAGS),$(CFLAGS),-O3 -flto -fno-exceptions -fno-rtti -fno-strict-aliasing )
 CFLAGS:=${CFLAGS} $(shell sdl2-config --cflags) -DSYSTEM_VOLUME_MIXER_AVAILABLE=0 -I.
 
 ifeq (${OS},Windows_NT)

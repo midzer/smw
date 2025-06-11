@@ -1,0 +1,10 @@
+[
+    "main",
+    "SdlRenderer_EndDraw",
+    "SDL_RenderPresent",
+    "SDL_Delay",
+    "GLES2_RenderPresent",
+    "SDL_GL_SwapWindowWithResult",
+    "Emscripten_GLES_SwapWindow",
+    "dynCall_v"
+]
