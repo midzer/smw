@@ -75,7 +75,7 @@ enum {
 };
 
 static const char kWindowTitle[] = "SMW";
-static uint32 g_win_flags = SDL_WINDOW_RESIZABLE;
+static uint32 g_win_flags = SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI;
 static SDL_Window *g_window;
 
 static uint8 g_paused, g_turbo, g_replay_turbo = true, g_cursor = true;
